@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Калькулятор маржи для Wildberries и Ozon — бесплатно</title>
+  <meta name="description" content="Бесплатный калькулятор маржи продавца на Wildberries и Ozon: комиссия, логистика, возвраты и акционная скидка. Без регистрации.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Калькулятор маржи для Wildberries и Ozon">
+  <meta property="og:description" content="Узнайте прибыль, маржу и цену безубыточности по каждому товару за 30 секунд.">
+  <meta property="og:image" content="/og-image.svg">
+  <meta property="og:url" content="">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Калькулятор маржи для Wildberries и Ozon",
+    "description": "Рассчитывает прибыль, маржу и цену безубыточности продавца маркетплейса.",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Any",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "RUB" },
+    "author": { "@type": "Person", "name": "merzter", "url": "https://t.me/merzter" }
+  }
+  </script>
+  <script src="js/meta.js" defer></script>
+  <script src="https://telegram.org/js/telegram-web-app.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/telegram.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./">
+        <span class="brand-mark" aria-hidden="true">₽</span>
+        <span class="brand-text"><strong>Маржа</strong><small>калькулятор продавца</small></span>
+      </a>
+      <nav class="header-nav" aria-label="Навигация">
+        <a href="#calc">Калькулятор</a>
+        <a href="wildberries/">Wildberries</a>
+        <a href="ozon/">Ozon</a>
+        <a href="unit-economics/">Юнит-экономика</a>
+        <a href="#faq">Вопросы</a>
+      </nav>
+      <span class="header-note">Бесплатно · без регистрации</span>
+      <a class="credit" href="https://t.me/merzter" target="_blank" rel="noopener noreferrer" aria-label="Создатель: merzter в Telegram"><span class="credit__at" aria-hidden="true">@</span>merzter</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <span class="eyebrow">Для продавцов Wildberries и Ozon</span>
+      <h1>Сколько вы реально зарабатываете на каждой продаже?</h1>
+      <p>Заполните цифры по товару — увидите прибыль, маржу и цену, ниже которой продавать нельзя. Занимает 30 секунд.</p>
+    </section>
+
+    <margin-calculator id="calc" market="wb"></margin-calculator>
+
+    <section class="info" id="how">
+      <div class="card">
+        <h2>Как мы считаем</h2>
+        <p>Берём цену после акционной скидки и вычитаем из неё все расходы: комиссию маркетплейса, себестоимость, логистику, ожидаемые потери от возвратов и прочие траты.</p>
+        <div class="formula"><span>Прибыль</span> = цена после скидки − комиссия − себестоимость − логистика − возвраты − прочие</div>
+        <p class="muted">Цена безубыточности показывает, какой должна быть цена товара с учётом той же скидки и комиссии, чтобы прибыль стала равной нулю.</p>
+      </div>
+
+      <div class="card">
+        <h2>Частые ошибки</h2>
+        <ul class="mistakes">
+          <li>Считают комиссию от цены до скидки, а она берётся с цены продажи.</li>
+          <li>Забывают про последнюю милю — она съедает маржу на дешёвых товарах.</li>
+          <li>Не учитывают возвраты: 8% возвратов — это не 8% выручки, а прямые потери.</li>
+          <li>Сравнивают выручку с прибылью и радуются не тому числу.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card faq" id="faq">
+      <h2>Частые вопросы</h2>
+      <details><summary>Можно ли сохранить расчёт?</summary><p>Да. Нажмите «Поделиться ссылкой» — в ней сохранятся все введённые числа. Откройте ссылку позже или отправьте коллеге.</p></details>
+      <details><summary>Это официальные тарифы Wildberries и Ozon?</summary><p>Нет. Это калькулятор, где вы сами задаёте условия. Укажите актуальные цифры из личного кабинета — так результат будет точным.</p></details>
+      <details><summary>Почему результат отличается от отчёта в кабинете?</summary><p>В отчёте могут учитываться хранение, штрафы, обнуление и другие платежи. Добавьте их в поле «Прочие расходы».</p></details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>Калькулятор маржи · честная цифра для продавца</span>
+      <span><a href="wildberries/">Wildberries</a> · <a href="ozon/">Ozon</a> · <a href="unit-economics/">Юнит-экономика</a></span>
+      <a class="credit" href="https://t.me/merzter" target="_blank" rel="noopener noreferrer" aria-label="Создатель: merzter в Telegram"><span class="credit__label">Создатель: </span><span class="credit__at" aria-hidden="true">@</span>merzter</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

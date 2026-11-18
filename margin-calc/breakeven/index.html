@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Цена безубыточности на маркетплейсе — калькулятор и формула</title>
+  <meta name="description" content="Как рассчитать цену безубыточности для Wildberries и Ozon. Формула, пример и бесплатный калькулятор.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Цена безубыточности на маркетплейсе">
+  <meta property="og:description" content="Минимальная цена товара, при которой вы не теряете деньги.">
+  <meta property="og:image" content="../og-image.svg">
+  <meta property="og:url" content="">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"Что такое цена безубыточности?","acceptedAnswer":{"@type":"Answer","text":"Минимальная цена продажи, при которой прибыль равна нулю."}},
+    {"@type":"Question","name":"Как рассчитать цену безубыточности?","acceptedAnswer":{"@type":"Answer","text":"Постоянные расходы разделить на произведение (1 минус комиссия) и (1 минус скидка)."}},
+    {"@type":"Question","name":"Зачем она нужна продавцу?","acceptedAnswer":{"@type":"Answer","text":"Чтобы понимать, какую скидку можно дать без убытка."}}
+  ]}
+  </script>
+  <script src="../js/meta.js" defer></script>
+  <script src="https://telegram.org/js/telegram-web-app.js" defer></script>
+  <script src="../js/app.js" defer></script>
+  <script src="../js/telegram.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../"><span class="brand-mark" aria-hidden="true">₽</span><span class="brand-text"><strong>Маржа</strong><small>калькулятор продавца</small></span></a>
+      <nav class="header-nav" aria-label="Навигация">
+        <a href="../">Главная</a><a href="../wildberries/">Wildberries</a><a href="../ozon/">Ozon</a><a href="../unit-economics/">Юнит-экономика</a>
+      </nav>
+      <span class="header-note">Бесплатно · без регистрации</span>
+      <a class="credit" href="https://t.me/merzter" target="_blank" rel="noopener noreferrer" aria-label="Создатель: merzter в Telegram"><span class="credit__at" aria-hidden="true">@</span>merzter</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="breadcrumbs"><a href="../">Главная</a><span>/</span><span>Цена безубыточности</span></div>
+
+    <section class="hero">
+      <span class="eyebrow">Перед любой акцией</span>
+      <h1>Цена безубыточности на маркетплейсе</h1>
+      <p>Знайте черту, ниже которой продавать нельзя. Калькулятор покажет минимальную цену с учётом комиссии, логистики, возвратов и акционной скидки.</p>
+    </section>
+
+    <margin-calculator market="own"></margin-calculator>
+
+    <article class="seo-article">
+      <h2>Простыми словами</h2>
+      <p>Цена безубыточности — это минимальная цена, при которой вы не зарабатываете, но и не теряете деньги. Всё, что выше, — прибыль. Всё, что ниже, — убыток.</p>
+
+      <h2>Формула</h2>
+      <div class="callout"><strong>Цена безубыточности</strong> = постоянные расходы ÷ ((1 − комиссия) × (1 − скидка)).</div>
+      <p>Постоянные расходы — это себестоимость, логистика, ожидаемые потери от возвратов и прочие траты на один заказ.</p>
+
+      <h2>Пример</h2>
+      <p>Товар за 2 490 ₽ на Ozon, комиссия 18%, скидка 10%, себестоимость 1 300 ₽, логистика 380 ₽, возвраты и прочее — 96 ₽.</p>
+      <table>
+        <tr><th>Показатель</th><th>Значение</th></tr>
+        <tr><td>Цена безубыточности</td><td>2 406 ₽</td></tr>
+        <tr><td>Текущая цена</td><td>2 490 ₽</td></tr>
+        <tr><td>Прибыль с заказа</td><td>62 ₽</td></tr>
+        <tr><td>Маржа</td><td>2,8%</td></tr>
+      </table>
+      <p>Запас всего 84 ₽. Дополнительная скидка 5% — и продажа уходит в минус. Поэтому перед каждой акцией проверяйте цену безубыточности.</p>
+
+      <h2>Как использовать</h2>
+      <ul>
+        <li>Заполните калькулятор выше.</li>
+        <li>Посмотрите цену безубыточности в блоке результата.</li>
+        <li>Сравните её с ценой, которую собираетесь выставить.</li>
+        <li>Если разница маленькая — сначала снижайте расходы, а не цену.</li>
+      </ul>
+
+      <h2>Частые вопросы</h2>
+      <details><summary>Почему цена безубыточности меняется при скидке?</summary><p>Потому что скидка уменьшает цену продажи, а постоянные расходы остаются прежними. Чем больше скидка, тем выше должна быть стартовая цена.</p></details>
+      <details><summary>Можно ли использовать этот расчёт для рекламы?</summary><p>Да. Если планируете платить за клик, добавьте стоимость привлечения в поле «Прочие расходы» — тогда цена безубыточности учтёт и рекламу.</p></details>
+    </article>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><span>Калькулятор маржи · считает цену безубыточности</span><span><a href="../">Главная</a> · <a href="../ozon/">Ozon</a></span><a class="credit" href="https://t.me/merzter" target="_blank" rel="noopener noreferrer" aria-label="Создатель: merzter в Telegram"><span class="credit__label">Создатель: </span><span class="credit__at" aria-hidden="true">@</span>merzter</a></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

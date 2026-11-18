@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Калькулятор маржи Wildberries — посчитать прибыль с заказа</title>
+  <meta name="description" content="Калькулятор маржи для продавца Wildberries: комиссия, логистика, возвраты и скидка. Узнайте прибыль и цену безубыточности за 30 секунд.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Калькулятор маржи Wildberries">
+  <meta property="og:description" content="Посчитайте, сколько реально зарабатываете с каждого заказа на Wildberries.">
+  <meta property="og:image" content="../og-image.svg">
+  <meta property="og:url" content="">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"Как посчитать маржу на Wildberries?","acceptedAnswer":{"@type":"Answer","text":"Вычтите из цены после скидки комиссию, себестоимость, логистику, потери от возвратов и прочие расходы."}},
+    {"@type":"Question","name":"Берется ли комиссия Wildberries после скидки?","acceptedAnswer":{"@type":"Answer","text":"Да, комиссия рассчитывается с фактической цены продажи, то есть уже с учетом акционной скидки."}},
+    {"@type":"Question","name":"Что такое цена безубыточности?","acceptedAnswer":{"@type":"Answer","text":"Минимальная цена товара, при которой прибыль равна нулю с учетом комиссии и скидки."}}
+  ]}
+  </script>
+  <script src="../js/meta.js" defer></script>
+  <script src="https://telegram.org/js/telegram-web-app.js" defer></script>
+  <script src="../js/app.js" defer></script>
+  <script src="../js/telegram.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../"><span class="brand-mark" aria-hidden="true">₽</span><span class="brand-text"><strong>Маржа</strong><small>калькулятор продавца</small></span></a>
+      <nav class="header-nav" aria-label="Навигация">
+        <a href="../">Главная</a><a href="../ozon/">Ozon</a><a href="../unit-economics/">Юнит-экономика</a><a href="../breakeven/">Цена безубыточности</a>
+      </nav>
+      <span class="header-note">Бесплатно · без регистрации</span>
+      <a class="credit" href="https://t.me/merzter" target="_blank" rel="noopener noreferrer" aria-label="Создатель: merzter в Telegram"><span class="credit__at" aria-hidden="true">@</span>merzter</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="breadcrumbs"><a href="../">Главная</a><span>/</span><span>Wildberries</span></div>
+
+    <section class="hero">
+      <span class="eyebrow">Wildberries · комиссия 15%</span>
+      <h1>Калькулятор маржи Wildberries</h1>
+      <p>Узнайте, сколько прибыли остаётся с каждого заказа с учётом комиссии, логистики, возвратов и акционных скидок. Цифры можно менять под свои условия.</p>
+    </section>
+
+    <margin-calculator market="wb"></margin-calculator>
+
+    <article class="seo-article">
+      <h2>Как считается маржа на Wildberries</h2>
+      <p>Выручка от продажи — не прибыль. Из неё вычитается комиссия маркетплейса, себестоимость товара, логистика и последняя миля, ожидаемые потери от возвратов и прочие расходы: упаковка, хранение, эквайринг.</p>
+
+      <div class="callout"><strong>Важно:</strong> комиссия Wildberries начисляется с цены после акционной скидки, а не с начальной цены. Поэтому скидка 20% уменьшает не только выручку, но и сумму комиссии.</div>
+
+      <h2>Пример расчёта</h2>
+      <p>Товар продаётся за 9 990 ₽, акционная скидка 10%, себестоимость 4 200 ₽, логистика 350 ₽, доля возвратов 8%.</p>
+      <table>
+        <tr><th>Статья</th><th>Сумма</th></tr>
+        <tr><td>Цена после скидки</td><td>8 991 ₽</td></tr>
+        <tr><td>Комиссия 15%</td><td>−1 349 ₽</td></tr>
+        <tr><td>Себестоимость</td><td>−4 200 ₽</td></tr>
+        <tr><td>Логистика</td><td>−350 ₽</td></tr>
+        <tr><td>Возвраты и прочее</td><td>−106 ₽</td></tr>
+        <tr><td><strong>Прибыль</strong></td><td><strong>2 987 ₽</strong></td></tr>
+      </table>
+      <p>Маржа составляет 33,2%. Цена безубыточности — 6 086 ₽. Пока цена выше этой отметки, продажа приносит деньги.</p>
+
+      <h2>Частые вопросы</h2>
+      <details><summary>Можно ли поменять тариф?</summary><p>Да. Все поля в калькуляторе редактируются — укажите комиссию и логистику из своего личного кабинета.</p></details>
+      <details><summary>Учитываются ли возвраты?</summary><p>Да. Вы задаёте долю возвратов и потери на один возврат — калькулятор добавляет ожидаемую сумму в расходы.</p></details>
+      <details><summary>Нужна ли регистрация?</summary><p>Нет. Калькулятор работает прямо в браузере, а ссылкой с результатом можно поделиться.</p></details>
+    </article>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><span>Калькулятор маржи · данные не отправляются на сервер</span><span><a href="../">Главная</a> · <a href="../ozon/">Ozon</a></span><a class="credit" href="https://t.me/merzter" target="_blank" rel="noopener noreferrer" aria-label="Создатель: merzter в Telegram"><span class="credit__label">Создатель: </span><span class="credit__at" aria-hidden="true">@</span>merzter</a></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

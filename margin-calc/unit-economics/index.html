@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Юнит-экономика маркетплейса простыми словами — калькулятор</title>
+  <meta name="description" content="Что такое юнит-экономика продавца Wildberries и Ozon простыми словами. Формула, пример расчёта и бесплатный калькулятор маржи.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Юнит-экономика маркетплейса простыми словами">
+  <meta property="og:description" content="Формула, пример и калькулятор для продавца Wildberries и Ozon.">
+  <meta property="og:image" content="../og-image.svg">
+  <meta property="og:url" content="">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"Что такое юнит-экономика маркетплейса?","acceptedAnswer":{"@type":"Answer","text":"Это расчёт прибыли и расходов на одну единицу товара: один заказ, одну продажу."}},
+    {"@type":"Question","name":"Чем юнит-экономика отличается от маржи?","acceptedAnswer":{"@type":"Answer","text":"Маржа показывает долю прибыли в цене, а юнит-экономика — полную картину по одному заказу."}},
+    {"@type":"Question","name":"С чего начать продавцу?","acceptedAnswer":{"@type":"Answer","text":"С посчитанной цены безубыточности: она показывает, ниже какой цены продавать нельзя."}}
+  ]}
+  </script>
+  <script src="../js/meta.js" defer></script>
+  <script src="https://telegram.org/js/telegram-web-app.js" defer></script>
+  <script src="../js/app.js" defer></script>
+  <script src="../js/telegram.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../"><span class="brand-mark" aria-hidden="true">₽</span><span class="brand-text"><strong>Маржа</strong><small>калькулятор продавца</small></span></a>
+      <nav class="header-nav" aria-label="Навигация">
+        <a href="../">Главная</a><a href="../wildberries/">Wildberries</a><a href="../ozon/">Ozon</a><a href="../breakeven/">Цена безубыточности</a>
+      </nav>
+      <span class="header-note">Бесплатно · без регистрации</span>
+      <a class="credit" href="https://t.me/merzter" target="_blank" rel="noopener noreferrer" aria-label="Создатель: merzter в Telegram"><span class="credit__at" aria-hidden="true">@</span>merzter</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="breadcrumbs"><a href="../">Главная</a><span>/</span><span>Юнит-экономика</span></div>
+
+    <section class="hero">
+      <span class="eyebrow">База для продавца</span>
+      <h1>Юнит-экономика маркетплейса простыми словами</h1>
+      <p>Один заказ — одна «единица». Посчитайте её экономику, и станет понятно: зарабатываете вы или просто крутите оборот.</p>
+    </section>
+
+    <margin-calculator market="own"></margin-calculator>
+
+    <article class="seo-article">
+      <h2>Что это такое</h2>
+      <p>Юнит-экономика — это прибыль и расходы в разрезе одной продажи. Не «за месяц», не «по магазину целиком», а конкретно по одному заказу одного товара.</p>
+      <p>Для продавца Wildberries или Ozon unit — это один заказ. В него входят:</p>
+      <ul>
+        <li>цена продажи после скидки;</li>
+        <li>комиссия маркетплейса;</li>
+        <li>себестоимость товара;</li>
+        <li>логистика и последняя миля;</li>
+        <li>потери от возвратов;</li>
+        <li>прочие расходы — упаковка, хранение, эквайринг.</li>
+      </ul>
+
+      <h2>Формула</h2>
+      <div class="callout"><strong>Прибыль с заказа</strong> = цена после скидки − комиссия − себестоимость − логистика − возвраты − прочие расходы.</div>
+      <p>Маржа при этом — прибыль, делённая на цену продажи и умноженная на 100. Это удобный способ сравнить разные товары между собой.</p>
+
+      <h2>Как читать результат</h2>
+      <table>
+        <tr><th>Маржа</th><th>Что это значит</th></tr>
+        <tr><td>выше 15%</td><td>Товар работает нормально</td></tr>
+        <tr><td>0–15%</td><td>Маржа тонкая, любая акция уводит в минус</td></tr>
+        <tr><td>ниже 0</td><td>Вы продаёте в убыток</td></tr>
+      </table>
+
+      <h2>С чего начать</h2>
+      <p>Возьмите свой самый продаваемый товар и посчитайте его в калькуляторе выше. Если результат отрицательный — сначала разберитесь с ценой безубыточности, а потом уже думайте про рекламу и продвижение.</p>
+
+      <h2>Частые вопросы</h2>
+      <details><summary>Нужно ли считать юнит-экономику по каждому товару?</summary><p>Нет. Начните с топ-10 позиций по выручке — обычно там и прячется основная проблема.</p></details>
+      <details><summary>Почему выручка растёт, а прибыль нет?</summary><p>Потому что рост достигается скидками и логистикой. Проверьте маржу после акции — она часто становится отрицательной.</p></details>
+    </article>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><span>Калькулятор маржи · без регистрации и серверов</span><span><a href="../wildberries/">Wildberries</a> · <a href="../ozon/">Ozon</a></span><a class="credit" href="https://t.me/merzter" target="_blank" rel="noopener noreferrer" aria-label="Создатель: merzter в Telegram"><span class="credit__label">Создатель: </span><span class="credit__at" aria-hidden="true">@</span>merzter</a></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
